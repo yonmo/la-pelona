@@ -10,11 +10,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import * as handler from './handler.js';
 
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-
 const options = {
-    key: fs.readFileSync(__dirname + '/tls/key.pem'),
-    cert: fs.readFileSync(__dirname + '/tls/cert.pem'),
+    key: fs.readFileSync(__dirname + '/tls/privkey.pem'),
+    cert: fs.readFileSync(__dirname + '/tls/fullchain.pem'),
     dhparam: fs.readFileSync(__dirname + '/tls/dh-strong.pem')
 };
 
