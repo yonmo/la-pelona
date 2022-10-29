@@ -1,0 +1,27 @@
+{
+  "name": "la-pelona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "la-pelona.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yonmo@bitbucket.org/yonmo/la-pelona.git"
+  },
+  "author": "yonmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/yonmo/la-pelona/issues"
+  },
+  "homepage": "https://bitbucket.org/yonmo/la-pelona#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^6.0.0",
+    "jstransformer-marked": "^1.2.0",
+    "pug": "^3.0.2"
+  }
+}

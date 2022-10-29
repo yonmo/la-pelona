@@ -1,0 +1,16 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.container
+        include includes/templates/head.pug
+        div.row.row-no-gutters.row-margin
+            div.col-xs-3.menu-object
+                img.img-responsive(src=image alt="")
+            div.col-xs-9.menu-text.text-layer
+                blockquote
+                    h2 The Idolum Collection
+                    p This is a grouping of personal research and writings, pursuant to the gathering of knowledge for knowledge's sake.
+        div.row.row-no-gutters.row-margin
+            div.col-xs-12.text-layer
+                include includes/templates/foot.pug

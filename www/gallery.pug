@@ -1,0 +1,14 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.container
+        include includes/templates/head.pug
+        each image, index in images
+            div.row.row-no-gutters.row-margin
+                div.col-xs-4
+                    a(href=image)
+                        img.card-img-top(src=image alt="").img-responsive
+                div.col-xs-8.menu-text.text-layer
+                    blockquote
+                        h4=titles[index]                        

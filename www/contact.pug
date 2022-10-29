@@ -1,0 +1,23 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.container
+        include includes/templates/head.pug
+        div.row.row-no-gutters.row-margin
+            div.col-xs-2
+                |
+            div.col-xs-8
+                div.block-quote-center.text-layer
+                    a.links(href='mailto:yonmo@idolum.io')
+                        | Click Here To Email: yonmo@idolum.io
+            div.col-xs-2
+                |
+        div.row.row-no-gutters.row-margin
+            div.col-xs-2
+                |
+            div.col-xs-8
+                div.block-quote-left.text-layer
+                    include:marked includes/writings/contact/public.md
+            div.col-xs-2
+                |

@@ -1,0 +1,10 @@
+div.row.row-no-gutters.row-margin
+    div.col-xs-12.text-layer
+        div.menu-header
+            a.links(href='../home')
+                | !{puzzle}
+    div.col-xs-12.text-layer.menu-header
+        each link in links
+            div.col-xs-3.textlayer
+                a.links(href='../' + link)
+                    h4.text-capitalize=link

@@ -1,0 +1,10 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.container
+        include includes/templates/head.pug
+        div.row.row-no-gutters.row-margin
+            div.col-xs-12
+                div.block-quote-justify.text-layer
+                    include:marked includes/writings/ethics/ethics.md
