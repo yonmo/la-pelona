@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 EXPOSE 443
-CMD ["node", "la-pelona.js"]
+CMD ["node", "./dist"]

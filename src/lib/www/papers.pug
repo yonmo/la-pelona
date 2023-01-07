@@ -1,0 +1,13 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.container
+        include includes/templates/head.pug
+        div.block-quote-center.text-layer
+            each title, index in titles
+                div.row.row-no-gutters.row-margin
+                    div.col-xs-12.text-layer
+                        div.article-card
+                            a.links(href=path + '/' + title + '.pdf')
+                                h3=title

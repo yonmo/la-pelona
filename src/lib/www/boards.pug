@@ -1,0 +1,11 @@
+doctype html 
+html 
+    include includes/templates/header.pug
+body
+    div.masonry
+        each image, index in images
+            div.masonry_obj
+                img(src=image)
+    div.center
+        div.center_obj
+            | !{boards}
