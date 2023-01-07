@@ -2,7 +2,7 @@
   "name": "solid-chainsaw",
   "version": "1.0.0",
   "description": "",
-  "main": "lapelona.js",
+  "main": "la-pelona.js",
   "type": "module",
   "scripts": {
     "copy": "cp -r src/lib/ dist/",
