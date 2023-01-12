@@ -21,6 +21,6 @@ if [ "$EUID" = 0 ]; then
     fi
     
 else
-    echo "Please Run As A Priveledged User..."
+    echo "Please Run As A Privileged User..."
     exit 1
 fi
