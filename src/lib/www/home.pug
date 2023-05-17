@@ -1,16 +1,29 @@
 doctype html 
-html 
+html
     include includes/templates/header.pug
+
+    style(type="text/css")
+        |   :root {
+        |        /* images */
+        |        --header-image: url('!{header}');
+        |        --body-bg-image: url('!{background}');
+        |        /* colors */
+        |        --content: rgba(255, 255, 255, 0.85);
+        |        --borders: rgb(190, 190, 190);
+        |        --stressed: #000000;
+        |        --normal: #000000;
+        |    }
+
 body
-    div.container
+    #container
         include includes/templates/head.pug
-        div.row.row-no-gutters.row-margin
-            div.col-xs-3.menu-object
-                img.img-responsive(src=image alt="")
-            div.col-xs-9.menu-text.text-layer
-                blockquote
-                    h2 The Idolum Collection
-                    p This is a grouping of personal research and writings, pursuant to the gathering of knowledge for knowledge's sake.
-        div.row.row-no-gutters.row-margin
-            div.col-xs-12.text-layer
-                include includes/templates/foot.pug
+        #flex
+            include includes/templates/sidebar.pug
+            main
+                h1 Home
+                p: strong Please read this first!
+                p This collection of tools, photography, papers, and research is for portolio and learning purposes only; which means that any information, vulnerabilities, or toolkits derived from these materials is not to be used for malicious purposes. Any usage for such purposes will be, and is completely, disavowed and unsupported.
+                p This is a grouping of personal research and writings, pursuant to the gathering of knowledge for knowledge's sake, so you are free to use it how you wish assuming the preceeding statement.
+
+        footer.
+            Ex Libris Idolum 2023

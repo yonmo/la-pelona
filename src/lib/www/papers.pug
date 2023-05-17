@@ -1,13 +1,28 @@
-doctype html 
-html 
+doctype html
+html
     include includes/templates/header.pug
+
+    style(type="text/css")
+        |   :root {
+        |        /* images */
+        |        --header-image: url('!{header}');
+        |        --body-bg-image: url('!{background}');
+        |        /* colors */
+        |        --content: rgba(255, 255, 255, 0.85);
+        |        --borders: rgb(190, 190, 190);
+        |        --stressed: #000000;
+        |        --normal: #000000;
+        |    }
+
 body
-    div.container
+    #container
         include includes/templates/head.pug
-        div.block-quote-center.text-layer
-            each title, index in titles
-                div.row.row-no-gutters.row-margin
-                    div.col-xs-12.text-layer
-                        div.article-card
-                            a.links(href=path + '/' + title + '.pdf')
-                                h3=title
+        #flex
+            include includes/templates/sidebar.pug
+            main
+                h1 Papers
+                each title in titles
+                    a(href=path + '/' + title + '.pdf')
+                        h3 !{' — ' + title}
+        footer.
+            Ex Libris Idolum 2023

@@ -1,10 +1,15 @@
-div.row.row-no-gutters.row-margin
-    div.col-xs-12.text-layer
-        div.menu-header
-            a.links(href='../home')
-                | !{puzzle}
-    div.col-xs-12.text-layer.menu-header
+#top
+   h1: a(href='/home')
+        img(src=linebreak, width='200')
+        br
+        img(src=left, width='40', height='19')
+        | Idolum Collection
+        img(src=right, width='40', height='19')
+        br
+        img(src=linebreak, width='200')
+nav#navbar
+    ul
         each link in links
-            div.col-xs-3.textlayer
-                a.links(href='../' + link)
-                    h4.text-capitalize=link
+            li
+                a(href='/' + link)
+                    | !{link}

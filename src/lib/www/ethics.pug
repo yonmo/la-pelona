@@ -1,10 +1,27 @@
-doctype html 
-html 
+doctype html
+html
     include includes/templates/header.pug
+
+    style(type="text/css")
+        |   :root {
+        |        /* images */
+        |        --header-image: url('!{header}');
+        |        --body-bg-image: url('!{background}');
+        |        /* colors */
+        |        --content: rgba(255, 255, 255, 0.85);
+        |        --borders: rgb(190, 190, 190);
+        |        --stressed: #000000;
+        |        --normal: #000000;
+        |    }
+
 body
-    div.container
+    #container
         include includes/templates/head.pug
-        div.row.row-no-gutters.row-margin
-            div.col-xs-12
-                div.block-quote-justify.text-layer
-                    include:markdown-it includes/writings/ethics/ethics.md
+        #flex
+            include includes/templates/sidebar.pug
+            main
+                h1 Ethics
+                p My work regarding ethics involves papers and volunteer work, coincidently, about: the compensation metrics of intellectual property in art, the inherentist perspective on rights to privacy, negative responsibility in ecocide, rights to bodily autonomy, and the right to defend one's self as a measure of nation-state security and safety. My views are in no way related to the views of my employer and do not reflect the statements of my associates.
+                p For additional details, it might be best to fiddle with the ideas presented in my papers. You will find sufficient measure to substantiate my views and why I present them. If you have any well thought out responses or contigencies, send them to me. I am always more than interested to ponder them and expand my perspectives.
+        footer.
+            Ex Libris Idolum 2023

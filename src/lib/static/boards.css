@@ -43,9 +43,6 @@ body, html {
 }
 
 .masonry {
-    border-style: none solid none;
-    border-width: 10px;
-    border-color: rgba(0, 0, 0, 1);
     position: absolute;
     z-index: 1;
     margin: 0;

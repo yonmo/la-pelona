@@ -1,14 +1,28 @@
-doctype html 
-html 
+doctype html
+html
     include includes/templates/header.pug
+
+    style(type="text/css")
+        |   :root {
+        |        /* images */
+        |        --header-image: url('!{header}');
+        |        --body-bg-image: url('!{background}');
+        |        /* colors */
+        |        --content: rgba(255, 255, 255, 0.85);
+        |        --borders: rgb(190, 190, 190);
+        |        --stressed: #000000;
+        |        --normal: #000000;
+        |    }
+
 body
-    div.container
+    #container
         include includes/templates/head.pug
         each image, index in images
-            div.row.row-no-gutters.row-margin
-                div.col-xs-4
+            #flex
+                main
                     a(href=image)
-                        img.card-img-top(src=image alt="").img-responsive
-                div.col-xs-8.menu-text.text-layer
+                        img(src=image alt="")
                     blockquote
-                        h4=titles[index]                        
+                        h4=titles[index]
+        footer.
+            Ex Libris Idolum 2023

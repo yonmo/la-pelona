@@ -11,4 +11,10 @@ src/lib/images/gallery/
 
 # Board files
 src/lib/images/boards/
-src/lib/boards/
+src/lib/www/includes/writings/
+
+# Headers
+src/lib/headers
+
+# Backgrounds
+src/lib/backgrounds

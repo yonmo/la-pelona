@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0;
+    background-color: var(--content);
+    color: var(--normal);
+    background-image: var(--body-bg-image);
+}
+
+#flex {
+    display: flex;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: var(--stressed);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#container a:hover {
+    color: var(--stressed);
+    text-decoration: underline;
+}
+
+#top {
+    width: 100%;
+    height: 100%;
+    background-color: var(--content);
+    text-align: center;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+}
+
+#top > h1:nth-child(1) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#top img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navbar {
+    height: 45px;
+    background-color: var(--content);
+    width: 100%;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    color: var(--stressed);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: var(--stressed);
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--content);
+    margin-top: 10px;
+    max-width: 800px;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+}
+
+main img {
+    width: 100%;
+}
+
+main h4 {
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: var(--content);
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--stressed);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: var(--stressed);
+}
+
+@media only screen and (max-width: 700px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    main {
+        border-right: none;
+        margin: 10px 0px 0px 0px;
+        border-left: #000000 solid 2px;
+        border-right: #000000 solid 2px;
+    }
+
+    .box {
+        margin-left: 280px;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}

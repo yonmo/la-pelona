@@ -1,11 +1,28 @@
-doctype html 
-html 
+doctype html
+html
     include includes/templates/header.pug
+
+    style(type="text/css")
+        |   :root {
+        |        /* images */
+        |        --header-image: url('!{header}');
+        |        --body-bg-image: url('!{background}');
+        |        /* colors */
+        |        --content: rgba(255, 255, 255, 0.85);
+        |        --borders: rgb(190, 190, 190);
+        |        --stressed: #000000;
+        |        --normal: #000000;
+        |    }
+
 body
-    div.masonry
-        each image, index in images
-            div.masonry_obj
-                img(src=image)
-    div.center
-        div.center_obj
-            | !{boards}
+    #container
+        include includes/templates/head.pug
+        #flex
+            include includes/templates/sidebar.pug
+            main
+                h1 Aesthetics Boards
+                each board in boards
+                    a(href='/boards/' + board)
+                        h3 !{' — ' + board}
+        footer.
+            Ex Libris Idolum 2023
