@@ -1,3 +1,4 @@
-# solid-chainsaw
+# La Pelona
 
-Read My Code If You Want To Learn How To Use It, Stinky.
+ My blog utilizing template rendering through Express and Pug
+Resources
